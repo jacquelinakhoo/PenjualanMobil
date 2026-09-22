@@ -16,7 +16,7 @@ if ($kodemobil && $merk && $type && $warna && $harga) {
         if (mysqli_query($conn, $sql)) {
             $response=['status'=>1, 'message'=>'Update berhasil.']; 
         } else {
-    $response = ['status' => 0, 'message' => "Data tidak lengkap. kodemobil=$kodemobil, merk=$merk, type=$type, warna=$warna, harga=$harga"];
+    $response = ['status' => 0, 'message' => 'Data tidak lengkap.'];
 }
 }
 echo json_encode($response);
